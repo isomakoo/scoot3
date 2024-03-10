@@ -112,6 +112,9 @@ a:hover{
     .content-list{
         max-width: 900px;
     }
+    .hero__container{
+        max-width: 900px;
+    }
     .content-btn{
         margin-left: -200px;
     }
@@ -212,12 +215,15 @@ a:hover{
         left: 10px;
         max-width: 400px;
     }
-    .content-list{
+    /* .content-list{
         max-width: 600px;
-    }
+    } */
     .content-btn{
         width: 120px;
         margin-left: -550px;
+    }
+    .content-list{
+        max-width: 600px;
     }
     .main-img{
         position: absolute;
@@ -273,15 +279,21 @@ a:hover{
     .header_btn{
         display: none;
     }
+    .sidebar{
+    max-width: 400px;
+    background-color: #333A44;
+    }
     .header__container{
         width: 100%;
     }
-    .sidebar-list{
-        flex-direction: column-reverse;
-        
+    .sidebar-link{
+        display: none;
     }
     .sidebar-item{
-        flex-direction: column-reverse;
+        max-width: 300px;
+    }
+    .sidebar-nav{
+        margin-left: -330px;
     }
   }
   @media (max-width: 400px) {
@@ -606,4 +618,9 @@ a:hover{
     align-items: center;
     justify-content: space-between;
     display: flex;
+}
+.sidebar-nav{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
 }
