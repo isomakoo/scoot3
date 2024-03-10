@@ -196,12 +196,9 @@ a:hover{
     .header-btn{
         display: block;
     }
-    .sidebar-link{
-        display: none;
-    }
-    .sidebar-linkes{
-      
-    }
+   .sidebar-list{
+    max-width: 400px;
+   }
   }
   @media (max-width: 700px) {
     .container{
@@ -278,6 +275,13 @@ a:hover{
     }
     .header__container{
         width: 100%;
+    }
+    .sidebar-list{
+        flex-direction: column-reverse;
+        
+    }
+    .sidebar-item{
+        flex-direction: column-reverse;
     }
   }
   @media (max-width: 400px) {
@@ -597,7 +601,9 @@ a:hover{
     margin-left: 10px;
     left: 400px;
 }
-.sidebar-list{
+.sidebar-item{
+    width: 1140px;
     align-items: center;
     justify-content: space-between;
+    display: flex;
 }
